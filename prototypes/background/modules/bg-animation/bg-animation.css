@@ -1,0 +1,72 @@
+body {
+  background-color: #002917;
+  background-color: #111;
+}
+main {
+  position: relative;
+}
+@keyframes breathe {
+  from {
+    font-size: 8px;
+  }
+  to {
+    font-size: 28px;
+  }
+}
+.gwc-code-cloud {
+  position: fixed;
+  color: #6BD2A3;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 20px;
+  border-radius: 40px;
+  z-index: -1;
+  animation-name: breathe;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.gwc-code-cloud-group-0 {
+  animation-delay: 0s;
+}
+.gwc-code-cloud-group-1 {
+  animation-delay: 0.6s;
+}
+.gwc-code-cloud-group-2 {
+  animation-delay: 1.2s;
+}
+.gwc-code-cloud-group-3 {
+  animation-delay: 1.8s;
+}
+.gwc-code-cloud-group-4 {
+  animation-delay: 2.4s;
+}
+.gwc-code-cloud-group-5 {
+  animation-delay: 3s;
+}
+.gwc-code-cloud-group-6 {
+  animation-delay: 3.6s;
+}
+.gwc-code-cloud-group-7 {
+  animation-delay: 4.2s;
+}
+.gwc-code-cloud-group-8 {
+  animation-delay: 4.8s;
+}
+.gwc-code-cloud-group-9 {
+  animation-delay: 5.4s;
+}
+.placeholder {
+  width: 960px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  overflow: hidden;
+  padding: 40px;
+}
+.placeholder p {
+  font-size: 20px;
+  font-family: sans-serif;
+  margin: 0 0 40px 0;
+  height: 100%;
+  overflow: hidden;
+}

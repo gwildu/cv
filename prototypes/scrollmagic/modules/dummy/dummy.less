@@ -1,0 +1,59 @@
+body{
+    background-color: blue;
+}
+header,
+footer {
+    background-color: white;
+    .clearfix();
+}
+main {
+    padding: 150px 0;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.expand {
+    margin: 100px 0;
+    height: 0;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.edu,
+.timeline,
+.work {
+    float: left;
+}
+
+.edu,
+.work {
+    width: 45%;
+}
+
+.timeline {
+    width: 10%;
+}
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+section,
+main {
+    .clearfix();
+}
+section {
+    .horizontal {
+        height: 600px;
+        &:first-of-type {
+            padding-top: 300px;
+        }
+    }
+}
+
