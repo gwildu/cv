@@ -3,18 +3,18 @@ html
 	head
 		meta(charset='utf8')
 		title background tryout
-		script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shCore.js')
-		//script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushCss.js')
-		script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushJScript.js')
-		//script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushPhp.js')
-		//script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushXml.js')
-		//script(src='/cv/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushPlain.js')
+		script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shCore.js')
+		//script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushCss.js')
+		script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushJScript.js')
+		//script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushPhp.js')
+		//script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushXml.js')
+		//script(src='/libraries/syntaxhighlighter/3/3.0.83/scripts/shBrushPlain.js')
 
-		link(rel='stylesheet' href='/cv/compiled/css/prototypes/background/modules/bg-animation/bg-animation.css')
-		link(rel='stylesheet' href='/cv/libraries/syntaxhighlighter/3/3.0.83/styles/shCore.css')
-		link(rel='stylesheet' href='/cv/libraries/syntaxhighlighter/3/3.0.83/styles/shThemeMidnight.css')
+		link(rel='stylesheet' href='/compiled/css/prototypes/background/modules/bg-animation/bg-animation.css')
+		link(rel='stylesheet' href='/libraries/syntaxhighlighter/3/3.0.83/styles/shCore.css')
+		link(rel='stylesheet' href='/libraries/syntaxhighlighter/3/3.0.83/styles/shThemeMidnight.css')
 		script(type="text/javascript")!= 'SyntaxHighlighter.all();'
-		style div.syntaxhighlighter{ padding: 20px; box-sizing: border-box;}
+		style!= "div.syntaxhighlighter{ padding: 20px; box-sizing: border-box;}"
 	body
 		main
 			section(class='placeholder')
@@ -26,7 +26,7 @@ html
 					while j < 40
 						- var rand = Math.floor ( Math.random() * 30 ), randColor = 'color: ' + colors[Math.floor(Math.random() * colors.length)], randGroup = 'gwc-code-cloud-group-' + Math.floor(Math.random() * 10), randWord = words[Math.floor(Math.random() * words.length)]
 						- rand = n ? rand : -(rand)
-						- n = n ? false : true
+						- n = !n
 						span(class='gwc-code-cloud '+randGroup style=randColor + '; top: ' + ((100 * i) + rand) + 'px; left: ' + ((100 * j) + rand) + 'px;')= randWord
 						- j++
 					- j = 0

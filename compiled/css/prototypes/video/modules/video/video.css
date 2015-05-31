@@ -10,6 +10,7 @@ video#vid-sandclock {
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  background: url("../media/pics/sandclock.gif") no-repeat;
+    /*noinspection CssUnknownTarget*/
+    background: url("../unversioned/pics/sandclock.gif") no-repeat;
   background-size: cover;
 }

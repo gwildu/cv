@@ -1,10 +1,10 @@
-body{
-    background-color: blue;
-}
 header,
 footer {
     background-color: white;
     .clearfix();
+}
+header {
+    text-align: center;
 }
 main {
     padding: 150px 0;
@@ -13,10 +13,10 @@ main {
 }
 
 .expand {
-    margin: 100px 0;
+    margin: 0;
     height: 0;
     overflow-x: hidden;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .edu,
@@ -27,11 +27,11 @@ main {
 
 .edu,
 .work {
-    width: 45%;
+    width: 40%;
 }
 
 .timeline {
-    width: 10%;
+    width: 20%;
 }
 
 .clearfix() {
@@ -50,9 +50,9 @@ main {
 }
 section {
     .horizontal {
-        height: 600px;
+        height: 400px;
         &:first-of-type {
-            padding-top: 300px;
+            margin-top: 500px;
         }
     }
 }
